@@ -21,7 +21,6 @@
     <meta property="og:description" content="身体を知り尽くした国家資格を持つプロが、あなたの「一生モノの身体づくり」をマンツーマンでサポートします。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saiin-seikotsuin.com/kenpro/">
-    <!-- 本番環境のURLに合わせて絶対パスに変更してください -->
     <meta property="og:image" content="https://saiin-seikotsuin.com/kenpro/kenpro_fv_bg.jpg">
     <meta property="og:site_name" content="西院整骨院">
     <meta name="twitter:card" content="summary_large_image">
@@ -112,9 +111,12 @@
 
         <main>
             <!-- 01. First View (FV) -->
-            <!-- FVの背景画像は style属性 内で指定しています -->
+            <!-- FVの背景画像を明るく見えやすいように変更。写真をそのまま出しつつ、文字が読めるように半透明の黒を重ねています -->
             <section class="relative bg-navy-900 text-white min-h-[85vh] md:min-h-[650px] flex flex-col justify-center">
-                <div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay" style="background-image: url('kenpro_fv_bg.jpg');"></div>
+                <!-- 写真レイヤー -->
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('kenpro_fv_bg.jpg');"></div>
+                <!-- 文字を読ませるための半透明オーバーレイ（黒70%） -->
+                <div class="absolute inset-0 bg-navy-900/70"></div>
                 
                 <div class="relative z-10 px-6 py-12 flex flex-col items-center md:items-start text-center md:text-left w-full h-full justify-center">
                     
@@ -164,7 +166,6 @@
                             正しい方法やペースを知らなければ、誰でも自分一人で身体を変え続けるのは非常に難しいことなのです。
                         </p>
                         
-                        <!-- 枠内の強調メッセージ -->
                         <div class="bg-gradient-to-br from-navy-900 to-navy-800 text-white p-6 md:p-8 rounded-xl shadow-lg my-8 relative overflow-hidden">
                             <div class="absolute -right-10 -top-10 text-9xl text-white opacity-5"><i class="fas fa-hands-helping"></i></div>
                             <p class="font-black text-xl md:text-2xl text-accent-400 mb-4 leading-tight">
@@ -176,7 +177,6 @@
                             </p>
                         </div>
                         
-                        <!-- 最後の強いメッセージ -->
                         <div class="text-center mt-8 border-t-2 border-greige-200 pt-8">
                             <p class="text-lg md:text-xl font-bold text-navy-900 leading-relaxed mb-4">
                                 一人で頑張りすぎて、<br class="md:hidden">身体を壊してしまっては本末転倒です。
@@ -202,7 +202,8 @@
                         <!-- POINT 01 -->
                         <div class="flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up">
                             <div class="w-full md:w-1/2 h-[250px] md:h-[300px] rounded-2xl shadow-lg overflow-hidden relative">
-                                <img src="kenpro_point01_analysis.jpg" onerror="this.src='https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=600&auto=format&fit=crop'" alt="医学的分析" class="w-full h-full object-cover">
+                                <!-- ダミー画像への切り替え（onerror）を削除しました -->
+                                <img src="kenpro_point01_analysis.jpg" alt="医学的分析" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-navy-900/10"></div>
                             </div>
                             <div class="w-full md:w-1/2">
@@ -215,7 +216,7 @@
                         <!-- POINT 02 -->
                         <div class="flex flex-col md:flex-row-reverse gap-8 items-center" data-aos="fade-up">
                             <div class="w-full md:w-1/2 h-[250px] md:h-[300px] rounded-2xl shadow-lg overflow-hidden relative">
-                                <img src="kenpro_point02_care.jpg" onerror="this.src='https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop'" alt="パーソナルケア" class="w-full h-full object-cover">
+                                <img src="kenpro_point02_care.jpg" alt="パーソナルケア" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-navy-900/10"></div>
                             </div>
                             <div class="w-full md:w-1/2">
@@ -228,7 +229,7 @@
                         <!-- POINT 03 -->
                         <div class="flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up">
                             <div class="w-full md:w-1/2 h-[250px] md:h-[300px] rounded-2xl shadow-lg overflow-hidden relative">
-                                <img src="kenpro_point03_support.jpg" onerror="this.src='https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=600&auto=format&fit=crop'" alt="伴走サポート" class="w-full h-full object-cover">
+                                <img src="kenpro_point03_support.jpg" alt="伴走サポート" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-navy-900/10"></div>
                             </div>
                             <div class="w-full md:w-1/2">
@@ -249,7 +250,6 @@
                     </h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- 願い1 -->
                         <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm flex items-start" data-aos="fade-up" data-aos-delay="100">
                             <div class="text-accent-400 text-3xl mr-4 mt-1"><i class="fas fa-weight"></i></div>
                             <div>
@@ -258,7 +258,6 @@
                             </div>
                         </div>
 
-                        <!-- 願い2 -->
                         <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm flex items-start" data-aos="fade-up" data-aos-delay="200">
                             <div class="text-accent-400 text-3xl mr-4 mt-1"><i class="fas fa-golf-ball"></i></div>
                             <div>
@@ -267,7 +266,6 @@
                             </div>
                         </div>
 
-                        <!-- 願い3 -->
                         <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm flex items-start" data-aos="fade-up" data-aos-delay="300">
                             <div class="text-accent-400 text-3xl mr-4 mt-1"><i class="fas fa-child"></i></div>
                             <div>
@@ -276,7 +274,6 @@
                             </div>
                         </div>
 
-                        <!-- 願い4 -->
                         <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm flex items-start" data-aos="fade-up" data-aos-delay="400">
                             <div class="text-accent-400 text-3xl mr-4 mt-1"><i class="fas fa-battery-half"></i></div>
                             <div>
@@ -302,7 +299,6 @@
                     </div>
 
                     <div class="space-y-6 md:space-y-8">
-                        <!-- プラン1: トライアル -->
                         <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up">
                             <div class="text-center md:text-left flex-1">
                                 <div class="inline-block bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded mb-3">STEP 1</div>
@@ -315,7 +311,6 @@
                             </div>
                         </div>
 
-                        <!-- プラン2: アクション -->
                         <div class="bg-white border-2 border-accent-400 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-lg relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                             <div class="absolute top-0 right-0 bg-accent-500 text-white text-xs font-bold px-4 py-1.5 rounded-bl-lg tracking-widest">推奨プラン</div>
                             <div class="text-center md:text-left flex-1 mt-4 md:mt-0">
@@ -329,7 +324,6 @@
                             </div>
                         </div>
 
-                        <!-- プラン3: ネバーギブアップ -->
                         <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
                             <div class="text-center md:text-left flex-1">
                                 <div class="inline-block bg-navy-50 text-navy-800 text-xs font-bold px-3 py-1 rounded mb-3 border border-navy-100">STEP 3</div>
@@ -439,8 +433,7 @@
                     
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
                         <div class="w-40 h-40 md:w-56 md:h-56 flex-shrink-0 rounded-full shadow-lg border-4 border-greige-100 overflow-hidden bg-greige-100" data-aos="fade-right">
-                            <!-- 院長プロフィール画像 -->
-                            <img src="8M6A0412.jpg" onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop'" alt="西院整骨院 院長" class="w-full h-full object-cover object-top">
+                            <img src="kenpro_profile_director.jpg" alt="西院整骨院 院長" class="w-full h-full object-cover object-top">
                         </div>
                         
                         <div class="text-center md:text-left" data-aos="fade-left">
