@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <!-- Google tag (gtag.js) - GA4 プレースホルダー -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <!-- Google tag (gtag.js) - GA4 計測タグ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JEEFMTFH8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-8JEEFMTFH8');
     </script>
     
     <meta charset="UTF-8">
@@ -111,7 +111,6 @@
 
         <main>
             <!-- 01. First View (FV) -->
-            <!-- 【修正】絶対パスで指定 -->
             <section class="relative bg-navy-900 text-white min-h-[85vh] md:min-h-[650px] flex flex-col justify-center">
                 <!-- 写真レイヤー -->
                 <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://seikotsuin2012.github.io/Saiin-personal/kenpro_fv_bg.jpg?v=3');"></div>
@@ -202,7 +201,6 @@
                         <!-- POINT 01 -->
                         <div class="flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up">
                             <div class="w-full md:w-1/2 h-[250px] md:h-[300px] rounded-2xl shadow-lg overflow-hidden relative">
-                                <!-- 【修正】絶対パスで指定 -->
                                 <img src="https://seikotsuin2012.github.io/Saiin-personal/kenpro_point01_analysis.jpg?v=3" alt="医学的分析" class="w-full h-full object-cover object-top">
                                 <div class="absolute inset-0 bg-navy-900/10"></div>
                             </div>
@@ -216,7 +214,6 @@
                         <!-- POINT 02 -->
                         <div class="flex flex-col md:flex-row-reverse gap-8 items-center" data-aos="fade-up">
                             <div class="w-full md:w-1/2 h-[250px] md:h-[300px] rounded-2xl shadow-lg overflow-hidden relative">
-                                <!-- 【修正】絶対パスで指定 -->
                                 <img src="https://seikotsuin2012.github.io/Saiin-personal/kenpro_point02_care.jpg?v=3" alt="パーソナルケア" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-navy-900/10"></div>
                             </div>
@@ -230,7 +227,6 @@
                         <!-- POINT 03 -->
                         <div class="flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up">
                             <div class="w-full md:w-1/2 h-[250px] md:h-[300px] rounded-2xl shadow-lg overflow-hidden relative">
-                                <!-- 【修正】絶対パスで指定 -->
                                 <img src="https://seikotsuin2012.github.io/Saiin-personal/kenpro_point03_support.jpg?v=3" alt="伴走サポート" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-navy-900/10"></div>
                             </div>
@@ -414,6 +410,7 @@
 
                             <div class="text-center max-w-lg mx-auto">
                                 <p class="text-sm font-bold text-gray-600 mb-3 tracking-wide">＼スムーズなご案内のため、予約優先制となります／</p>
+                                <!-- 各ボタンにGA4のクリック計測イベントが仕込まれています -->
                                 <a href="https://lin.ee/toQU1XA" target="_blank" onclick="gtag('event', 'click', {'event_category': 'CV_Button', 'event_label': 'Main_LINE'});" class="btn-pulse flex flex-col items-center justify-center w-full bg-[#06C755] text-white py-5 px-4 rounded-2xl shadow-[0_10px_20px_rgba(6,199,85,0.3)] border-b-[6px] border-[#04a044] hover:bg-[#05b34c] hover:translate-y-[2px] hover:border-b-[4px] transition-all duration-200">
                                     <div class="flex items-center text-xl md:text-2xl font-black tracking-wide mb-1">
                                         <i class="fab fa-line mr-3 text-3xl"></i>LINEで相談・体験予約をする
@@ -435,7 +432,6 @@
                     
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
                         <div class="w-40 h-40 md:w-56 md:h-56 flex-shrink-0 rounded-full shadow-lg border-4 border-greige-100 overflow-hidden bg-greige-100" data-aos="fade-right">
-                            <!-- 【修正】絶対パスで指定 -->
                             <img src="https://seikotsuin2012.github.io/Saiin-personal/kenpro_profile_director.jpg?v=3" alt="西院整骨院 院長" class="w-full h-full object-cover object-top">
                         </div>
                         
